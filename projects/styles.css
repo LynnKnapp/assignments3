@@ -1,0 +1,145 @@
+body {
+     display: flex;
+    flex-direction: column;
+    /* grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; */ 
+    margin: 0;
+    background-image: url('https://wallpapercave.com/wp/dYhlSep.jpg');
+    background-size: cover;
+    
+}
+#imageMario{
+    margin-bottom: 170px;
+}
+#pTotal {
+    color: #940994;
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+    /* position: relative;
+    left: 670px;
+    top: 100px; */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#total {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    width: 80px;
+    border: solid rebeccapurple;
+    justify-content: center;
+    align-items: center;
+    margin-left: 400px;
+}
+
+#header {
+    font-size: 80px;
+    text-align: center;
+    color: rgb(128, 3, 149);
+    /* width: 800px; */
+    width: 100%;
+    height: auto;
+    margin-bottom: px;
+}
+
+#header>h1 {
+    font-size: 90px;
+    text-align: center;
+    width: 100vw;
+}
+
+#Goomba-image{
+    /* grid-column: 1/2;
+    grid-row: 3/4; */
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 120px;
+    margin-left: 30px;
+    justify-content: center;
+
+}
+#Bowser-image{
+    /* grid-column: 2/3;
+    grid-row: 2/3; */
+    display: flex;
+    flex-direction: column;
+    margin-top: -120px;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */ 
+    margin-left: 150px;
+    
+} 
+
+#Spiny-image{
+    /* grid-column: 3/4;
+    grid-row: 1/2; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+    margin-top: -44px;
+    margin-right: 270px; 
+}
+
+form {
+    /* margin-top: -694px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#images {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+#submit{
+    /* position: relative;  */
+    height: 25px;
+    width: 60px;
+    margin-top: 60px;
+    /* left: -220px;  */
+}
+/* button {
+    position: absolute;
+     width: 11%;
+     margin-left: 600px; 
+    margin-bottom: 258px; 
+    position: relative; 
+    top: 200px;  
+    left: 250px;  
+}  */
+
+#imageMario {
+    width: 100vw;
+    align-items: center;
+    height: auto;
+}
+
+.newMario {
+    width: 85%;
+    height: 275px;
+    background-size: cover;
+    margin-left: 6%;
+}
+
+#footer {
+    margin-left: 300px;
+    
+}
+
+.container {
+    margin: 0px;
+}
+.baddies{
+    margin-bottom: 510px;
+}
+h1{
+    margin-bottom: 0px;
+}
