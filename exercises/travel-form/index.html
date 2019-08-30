@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel= "stylesheet" href= "styles.css"/>
+    <title>Travel Form</title>
+</head>
+<body>
+        <form name= "travel">
+            first name: <input type="text" name="firstName">
+            last name:  <input type="text" name="lastName">
+            Age:        <input type="number" name="age">
+            Male:       <input type="radio" name="gender" value="male">
+            Female:     <input type="radio" name="gender" value="female">  
+    
+    
+            <select name ="location">
+                    <option value ="Miami">      Miami </option>
+                    <option value ="Detroit">     Detroit</option>
+                    <option value ="Los Angeles"> Los Angeles</option>
+                    <option value ="Boston">     Boston</option>
+            </select>
+     
+    <div>
+            <p>Dietary-Restrictions:</p>
+            vegan <input type ="checkbox"      value ="vegan"      name ="diet">
+            carnivore <input type ="checkbox"  value ="carnivore"  name ="diet">
+            lactoseInt <input type ="checkbox" value ="lactoseInt" name ="diet">
+            chocolate <input type ="checkbox"  value ="chocolate"  name ="diet">    
+    </div>
+    <div id ='diet-array'></div>
+    <button>submit</button>           
+
+        </form>
+    </div>
+<script src="./main.js"></script>    
+</body>
+</html>
