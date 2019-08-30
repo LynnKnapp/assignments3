@@ -1,0 +1,352 @@
+.france-div{
+    display: inline-block;
+    height: 600px;
+    width: 900px;
+    border: 1px solid whitesmoke; 
+    margin-bottom: 50px; 
+    border: solid rgb(20, 20, 20)
+}
+
+.blue {
+    display: inline-block;
+    height: 100%; 
+    width:  33%;
+    background-color: blue;
+    
+}
+.white {
+    display: inline-block;
+    height: 100%; 
+    width:  33%;
+    background-color: white;
+     
+}
+
+.red {
+    display: inline-block;
+    height: 100%; 
+    width:  33%;
+    background-color: rgb(197, 12, 12);
+    padding: -1px;
+}  
+.germany-div{
+    display: inline-block;
+    height: 600px;
+    width: 900px;
+    border: solid rgb(17, 16, 16);
+    margin-bottom: 50px;
+} 
+.black{
+    display: inline-block;
+    height: 33%;
+    width: 100%;
+}
+
+
+.gblack{
+    display: inline-block;
+    height: 33%;
+    width: 100%;
+    background-color: black;
+    margin-bottom: -4px;
+}
+.gred{
+    display: inline-block;
+    height: 33%;
+    width: 100%;
+    background-color: rgb(167, 13, 13);
+    margin-bottom: -5px;
+} 
+.gyellow{
+    display: inline-block;
+    height: 33%;
+    width: 99%;
+    background-color: rgb(209, 209, 15);
+    padding: 4px;
+}
+.madagascar{
+    position: absolute;
+    height: 600px;
+    width: 900px;
+    border: solid black;
+}
+.mwhite{
+    position: relative;
+    height: 600px;
+    width: 300px;
+    background-color: white;
+    top: 5px;
+    left: 5px;
+}
+.morange{
+    position: relative;
+    height: 300px;
+    width:  600px;
+    background-color: rgba(255, 34, 14, 0.897);
+    bottom: 597px;
+    left: 303px;
+    padding-bottom: 0px;
+}
+.mgreen{
+    position: relative;
+    height: 301px;
+    width: 600px;
+    background-color: rgba(2, 121, 2, 0.829);
+    margin-top: -596px;
+    margin-left: 305px;
+    padding-top: 0px;
+}
+.switzerland{
+    position: absolute;
+    height: 600px;
+    width: 900px;
+    background-color: rgb(200, 5, 5);
+    border: solid black;
+}
+.vertical{
+    position: relative;
+    width: 140px;
+    height: 480px;
+    background-color: white;
+    top: 104px;
+    left: 353px;
+}
+.horizontal{
+    position: relative;
+    width: 480px;
+    height: 140px;
+    background-color: white;
+    left: 192px;
+    bottom: 229px;
+}
+.sweden{
+    position: absolute;
+    height: 600px;
+    width: 900px;
+    background-color: #4B709A;
+}
+.up{
+    position: relative;
+    width: 130px;
+    height: 100%;
+    background-color: #FBC52C;
+    left: 370px;
+}
+.across{
+    position: relative;
+    width: 100%;
+    height: 130px;
+    background-color: #FBC52C;
+    bottom: 378px;
+}
+.gambia{
+    position: absolute;
+    height: 600px;
+    width: 900px;
+    background-color: white;
+}
+.red1{
+    position: relative;
+    height: 170px;
+    width: 100%;
+    background-color: rgb(175, 28, 28);
+}
+.blue2{
+    position: relative;
+    height: 120px;
+    width: 100%;
+    background-color: #162C9a;
+    bottom: -63px;
+}
+.green2{
+    position: relative;
+    height: 170px;
+    width: 100%px;
+    background-color: rgb(9, 92, 9);
+    top: 142px;
+}
+
+.tonga{
+    position: absolute;
+    height: 600px;
+    width: 900px;
+    background-color: rgb(175, 28, 28);
+    
+}
+.white-box{
+    position: relative;
+    height: 300px;
+    width: 400px;
+    background-color: white;
+    
+}
+.white-vert{
+    position: relative;
+    height: 180px;
+    width: 50px;
+    background-color: rgb(175, 28, 28);
+    top: -246px;
+    left: 161px;
+}
+.white-hori{
+    position: relative;
+    height: 50px;
+    width: 180px;
+    background-color: rgb(175, 28, 28);
+    left: 96px;
+    top: -365px;
+}
+
+.japan{
+    position: absolute;
+    height: 600px;
+    width: 900px;
+    background-color: white;
+    border: solid black;
+}
+.circle{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    background-color: rgb(199, 6, 6);
+    border-radius: 50%;
+    left: 320px;
+    top: 190px;
+}
+
+.greece{
+    position: relative;
+    height: 600px;
+    width: 900px;
+    background-color: white; 
+    top: 650px;
+}
+.stripe1{
+    position: relative;
+    height: 70px;
+    width:900px;
+    background-color: #4B709A;
+    bottom: -47px;
+}
+.stripe2{
+    position: relative;
+    height: 70px;
+    width:900px;
+    background-color: #4B709A;
+    bottom: -101px;
+}
+.stripe3{
+    position: relative;
+    height: 70px;
+    width:900px;
+    background-color: #4B709A;
+    bottom: -161px;
+}
+.stripe4{
+    position: relative;
+    height: 70px;
+    width:900px;
+    background-color: #4B709A;
+    bottom: -221px;
+}
+.stripe5{
+    position: relative;
+    height: 70px;
+    width:900px;
+    background-color: #4B709A;
+    bottom: -297px;
+}
+.box{
+    position: relative;
+    height: 324px;
+    width: 324px;
+    background-color: white;
+    top: -304px;
+    left: 0px;
+    border: solid black;
+
+}
+.vert{
+    position: relative;
+    height: 324px;
+    width: 70px;
+    background-color: #4B709A;
+    bottom: 631px;
+    left: 118px;
+}
+.hori{
+    position: relative;
+    height: 70px;
+    width: 326px;
+    background-color: #4B709A;
+    bottom: 833px;
+    
+}
+#niger{
+    position: relative;
+    height: 600px;
+    width: 900px;
+    background-color: white;
+    border: solid black;
+    top: -388px;
+    
+}
+.norange{
+    position: relative;
+    height: 200px;
+    width:900px;
+    background-color: #ff631b;
+    top: -991px;
+}
+.ngreen{
+    position: relative;
+    height: 200px;
+    width: 900px;
+    background-color: #6AE83A;
+    top: -792px;
+}
+.ncircle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 180px;
+    background-color: #ff631b;
+    border-radius: 50%;
+}
+#maldives{
+    position: relative;
+    height: 600px;
+    width: 900px;
+    background-color: #c90000;
+}
+.mal-green{
+    position: relative;
+    height: 320px;
+    width:  480px;
+    background-color: green; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.crescent1{
+    position: relative;
+    top: 50%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    width: 175px;
+    height: 175px;
+    background-color: white;
+    border-radius: 50%;
+} 
+.crescent2{
+position: relative;
+top: -4%;
+left: 62%;
+transform: translate(-50%, -50%);
+width: 175px;
+height: 175px;
+background-color: green;
+border-radius: 50%;   
+}
