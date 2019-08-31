@@ -1,6 +1,7 @@
 var totalBox = document.getElementById("total")
 var mario = document.baddies
 
+
 document.baddies.spinyCoins.addEventListener('change', function(event){
         event.preventDefault()
         let audio = new Audio('./Mario-coin-sound.mp3');
@@ -19,11 +20,6 @@ document.baddies.bowserCoins.addEventListener('change', function(event){
     audio.play();
 })
 
-// document.getElementById('submit').addEventListener('click', function(event){
-//     event.preventDefault()
-//     let audio = new Audio('./Mario-coin-sound.mp3');
-//     audio.play();
-// })
 
 
 mario.addEventListener("submit", function(event){
