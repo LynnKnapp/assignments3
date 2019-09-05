@@ -55,10 +55,10 @@ let newman = new jerkStore("Newman", 120, 20, ["mailbag", "the rope", "mail truc
 let soupNazi = new jerkStore("Soup Nazi", 100, 15, ["crab bisque", "chef knife", "his finger"], "no soup for you, 1 year", "You've encountered the Soup Nazi, don't get in the line.")
 let frankCostanza = new jerkStore("Frank Costanza", 110, 10, ["frank's cooking", "his obscenities", "headslap"], "You want a piece of me, you want a piece of me.  You got it!!", "Oh no it's Frank Costanza.  Prepare for the feats of strength.")
 ​
-const jerkStores = [newman, soupNazi, frankCostanza]
+const randomJerkStores = [newman, soupNazi, frankCostanza]
 ​
 let playerNames = player.map(player => player.name)
-    
+
 let options = readlineSync.keyInSelect(playerNames, "Which player do you choose?")
 if (options === 0) {
     console.log("You've selected George")
@@ -111,28 +111,20 @@ function jerkStoreAppears() {
     let chooseFight = readlineSync.keyIn("Do you want to fight [f] for fight, [r] to  run?", {
         limit: 'fr'})
     
-    if (chooseFight === "f") {
-        // if(player.hp >0){
-        //         attackPerson()yy
-        // }else if (jerkStores.hp > 0){
-            if (jerkStore === newman) {
+    if (chooseFight === "f" && jerkstore === newman) {
             console.log("Hold onto your food, you encountered Newman, he'll starve immediately without his chocolate sauce to dip his Kenny Roger's broccoli in.")
-            } else if (jerkStore === soupNazi) {
+            } else if ( chooseFight === 'f' && jerkStore === soupNazi) {
             console.log("You've encountered the Soup Nazi, don't get in the line.  Then he'll go shoot himself.")
-            }else if (jerkStore === frankCostanza) {
+            }else if (chooseFight === 'f' && jerkStore === frankCostanza) {
             console.log("Yell Serenity Now, it'll turn him insane and he'll shrink.")
             }
             attackJerkStore(jerkStore)
-                // if (jerkStores.hp > 0) {
-                //     attackPerson()
-                // } else if (player.hp > 0 && jerkStores.hp <= 0) {
-                    
-                // }
+                
                 
                 
         } 
 ​
-}
+
 ​
 function attackJerkStore(jerk) {
     console.log("Attack Jerkstore.")
