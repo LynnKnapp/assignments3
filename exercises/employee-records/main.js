@@ -7,6 +7,9 @@ function Employee(name, jobTitle, salary){
         this.status = 'part-time'
 
 }
+//employee.prototype.printEmployessForm = function(){
+        // console.log(this)
+// } Nate's notes
 
 const randinoBandito = new Employee('RandinoBendito','WebDev','$200,000')
 randinoBandito.status = 'full-time' 
