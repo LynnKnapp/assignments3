@@ -1,0 +1,87 @@
+#toDoContainer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    /* font-size: 60px; */
+    border: double rgb(92, 71, 184) 6px;
+    margin-right: 37px;
+    margin-bottom: 15px;
+}
+#title.main {
+    text-align: center;
+    font-size: 65px;
+    font-family: 'Atomic Age', cursive;
+    color: white;
+}
+
+#toDoContainer>h1 {
+    font-size: 45px;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    /* font-family: 'Oleo Script', cursive; */
+    /* font-family: 'Playball', cursive; */
+    /* font-family: 'Yeseva One', cursive; */
+}
+
+p {
+    font-size: 23px;
+    font-family: 'Engagement', cursive;
+}
+
+
+h2 {
+    display: inline;
+    font-size: 30px;
+    border: solid whitesmoke;
+    font-family: 'Engagement', cursive;
+}
+
+
+.title-bar > h3 {
+    font-size: 45px;
+    font-family: 'Atomic Age', cursive;
+    color: white;
+}
+
+.title {
+    text-align: center;
+    font-size: 68px;
+    font-family: 'Atomic Age', cursive;
+    color: rgb(147, 64, 161);
+}
+
+.main {
+    width: 1000px;
+}
+
+#toDoDiv {
+    border: 1px solid black;
+    width: 70%;
+    margin: auto;
+    background-color: rgb(147, 64, 161);
+    color: whitesmoke;
+
+}
+
+#add-todo {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 5px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.label {
+    margin: 10px;
+}
+
+.img {
+    height: 200px;
+    width: 200px;
+}
