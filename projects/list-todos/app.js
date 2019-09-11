@@ -1,5 +1,4 @@
 const form = document.getElementById("addToDo")
-// let toDoList = []
 
 function start(update){
     axios.get("https://api.vschool.io/lynnknapp/todo")

@@ -9,12 +9,15 @@ function getToDos(){
         return console.log(error)
     })
 }
+
+getToDos()
+
 function listTodos(todos, update){
     if(update){
-        document.getElementById('list').innerText = ''
+        document.getElementById('list').innerHTML = ''
     }
     for(let i = 0; i < todos.length; i++){
-        let container = document.createElement('div')
+        let toDoContainer = document.createElement('div')
         let title = document.createElement('h2')
         title.innerText = todo.title
         let description = document.createElement('h4')
