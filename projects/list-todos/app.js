@@ -41,11 +41,11 @@ function listToDos(todos, update) {
         delBtn.addEventListener("click", function () {
             toDoContainer.style.display = 'none'
             axios.delete("https://api.vschool.io/lynnknapp/todo/" + todo._id)
-                .then(response => {
-                    getToDos()
-                    console.log(response.data)
-                })
-                .catch(error => console.log(error))
+            .then(response => {
+                getToDos()
+                console.log(response.data)
+            })
+            .catch(error => console.log(error))
         })
 
         checkbox.addEventListener("click", function () {

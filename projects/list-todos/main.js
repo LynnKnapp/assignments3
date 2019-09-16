@@ -1,6 +1,6 @@
 const todoList = document.getElementById('addTodo') 
 
-function getToDos(){
+function getToDos(update){
     axios.get('https://api.vschool.io/lynnknapp/todo/')
     .then (response => {
         listTodos(response.data, update)
@@ -19,18 +19,18 @@ function listTodos(todos, update){
     for(let i = 0; i < todos.length; i++){
         let toDoContainer = document.createElement('div')
         let title = document.createElement('h2')
-        title.innerText = todo.title
+        title.innerText = todos.title
         let description = document.createElement('h4')
-        description.innerText = "Description" + todo.description 
+        description.innerText = "Description" + todos.description 
         let price =document.createElement('h4')
-        price.innerText = todo.price
+        price.innerText = todos.price
         let br =document.createElement('br')
         let img =document.createElement('img')
         img.setAttribute('background-size', 'cover')
         img.style.width = '300px'
         img.style.height = '300px'
         img.style.backgroundSize = 'cover'
-        img.setAttribute('src', todo.imgUrl)
+        img.setAttribute('src', todos.imgUrl)
         let checkbox = document.createElement('imput')
         checkbox.setAttribute('type', 'checkbox')
         const delBtn = document.createElement('button')
@@ -70,7 +70,7 @@ function listTodos(todos, update){
     } 
 
 }
-document.addToDo.addEventListener('submit', function (event){
+addToDo.addEventListener('submit', function (event){
     event.preventDefault()
     let title = form.title.value
     let description = form.description.value
