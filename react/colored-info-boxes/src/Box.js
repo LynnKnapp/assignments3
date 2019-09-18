@@ -6,7 +6,8 @@ const Box = (props)=>{
         height: '300px',
         width: '300px',
         fontSize: '18px',
-        border: '5px solid black' 
+        border: '5px solid black', 
+        textAlign: 'center'
     };
     return(
         <div style = {style}>
