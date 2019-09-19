@@ -9,8 +9,8 @@ const App = () => {
             title = "Yellow"
             subtitle = "It's just yellow damnit" 
             info = "I need to find a yellow that's clear, not creamy"/>
-            <Box boxClass = 'box2'
-            backgroundColor = 'black'
+            <Box boxClass = 'box2' 
+            backgroundColor = 'orange'
             title = 'Black'
             subtitle = "It's just black!!!"
             info = "What's wrong with my color, I have 6 numbers, I'll just put black."/>

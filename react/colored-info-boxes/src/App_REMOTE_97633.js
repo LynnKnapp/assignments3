@@ -9,7 +9,7 @@ const App = () => {
             title = "Yellow"
             subtitle = "It's just yellow damnit" 
             info = "I need to find a yellow that's clear, not creamy"/>
-            <Box boxClass = 'box2'
+            <Box boxClass = 'box2' 
             backgroundColor = 'black'
             title = 'Black'
             subtitle = "It's just black!!!"
@@ -26,29 +26,11 @@ const App = () => {
             info = "fhdjskafhjeh"/>
             <Box boxClass = 'box5' 
             backgroundColor = 'teal'
-            title = 'Teal'
-            subtitle = 'Teal is for turtles'
-            info = 'What can I say about teal.'/>
-            <Box boxClass = 'box7'
-             backgroundColor = 'red'
-             title = 'Red'
-             subtitle = 'Bloody Red'
-             info = 'Red is not '/>
-            <Box boxClass = 'box8' 
-            backgroundColor = 'blue'
-            title = 'Blue'
-            subtitle = " It's just blue"
-            info = "Isn't blue so beautiful"/>
-            <Box boxClass = 'box9' 
-            backgroundColor = 'lavender'
-            title = 'Lavender'
-            subtitle = 'Luciousness'
-            info = "Isn't lavender so very lovely"/>
-            <Box boxClass = 'box10' 
-            backgroundColor = 'green'
-            title = "Green"
-            subtitle = "Gross Green"
-            info = " Really gross things are green"/>
+            />
+            <Box boxClass = 'box7' backgroundColor = 'red'/>
+            <Box boxClass = 'box8' backgroundColor = 'blue'/>
+            <Box boxClass = 'box9' backgroundColor = 'lavender'/>
+            <Box boxClass = 'box10' backgroundColor = 'green'/>
         </div>
     )
 }

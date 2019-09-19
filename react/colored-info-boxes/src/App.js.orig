@@ -26,6 +26,7 @@ const App = () => {
             info = "fhdjskafhjeh"/>
             <Box boxClass = 'box5' 
             backgroundColor = 'teal'
+<<<<<<< HEAD
             title = 'Teal'
             subtitle = 'Teal is for turtles'
             info = 'What can I say about teal.'/>
@@ -49,6 +50,13 @@ const App = () => {
             title = "Green"
             subtitle = "Gross Green"
             info = " Really gross things are green"/>
+=======
+            />
+            <Box boxClass = 'box7' backgroundColor = 'red'/>
+            <Box boxClass = 'box8' backgroundColor = 'blue'/>
+            <Box boxClass = 'box9' backgroundColor = 'lavender'/>
+            <Box boxClass = 'box10' backgroundColor = 'green'/>
+>>>>>>> 597c6f43ec73c50266c1c75870ebbaebb29d890b
         </div>
     )
 }

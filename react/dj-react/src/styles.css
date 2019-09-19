@@ -1,0 +1,27 @@
+body{
+    background-color: coral;
+}
+.container{
+   height: 200px;
+   width: 200px; 
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 10px;
+   justify-items: center;
+   margin: 0 auto;
+   
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: solid 3px yellow;
+    justify-self: center;
+    color: white;
+}
+.green-box{
+    background-color:  rgb(149, 241, 10);
+}
+.fushia{
+    background-color: fuchsia;
+}
