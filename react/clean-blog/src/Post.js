@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Post =()=>{
+const Post =(props)=>{
     return(
         <div>
-           <h1>Hello</h1> 
-           <h3>la la la</h3>
-           <h5>yada</h5>
+           <h1>{props.title}</h1> 
+           <h3>{props.subtitle}</h3>
+           <h5>{props.date}</h5>
         </div>
     )
 }

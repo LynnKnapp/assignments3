@@ -2,7 +2,7 @@ import React from 'react'
 import Post from './Post';
 
 
-const PostList=(props)=>{
+const PostList=(post)=>{
     const eachPost =[{
         title: 'Man must explore, and this is exploration at its greatest',
         subtitle: 'Problems look mighty small from 150 feet up. ',
@@ -21,10 +21,14 @@ const PostList=(props)=>{
         date: "Posted by Start BootStrap on July 8, 2019",
     }   
     ]
-    const mappedPostList = eachPost.map(post =>{
-                    <Post
-                        key ={i + post.title}  3250 S 700 E
-    })
+    const mappedPostList = eachPost.map((post, i) =>
+                  <Post
+                        key ={i + post.title} 
+                        title ={post.title}
+                        subtitle ={post.title}
+                        date ={post.date} />
+    
+    )
 
     return(
         <div>
