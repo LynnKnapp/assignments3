@@ -48,11 +48,36 @@ class App extends Component{
         this.setState(changeRightBlue)
     }
     handleBigTimeDJ1=()=>{
-        function 
+        function changeOnePink(currentColor){
+            const newState ={boxes: ['green', currentColor.boxes[1], currentColor.boxes[2], currentColor.boxes[3]]}
+            return newState
+        }
+        this.setState(changeOnePink)
+    }
+    handleBigTimeDJ2 =()=>{
+        function changeOneCoral(currentColor){
+            const newState ={boxes: [currentColor.boxes[0], 'darkblue', currentColor.boxes[2], currentColor.boxes[3]]}
+            return newState
+        }
+        this.setState(changeOneCoral)
+    }
+    handleBigTimeDJ3 =()=>{
+        function changeOneOrange(currentColor){
+            const newState ={boxes: [currentColor.boxes[0], currentColor.boxes[1], 'orange', currentColor.boxes[3]]}
+            return newState
+        }
+        this.setState(changeOneOrange)
+    }
+    handleBigTimeDJ4 =()=>{
+        function changeOneRed(currentColor){
+            const newState ={boxes: [currentColor.boxes[0], currentColor.boxes[1], currentColor.boxes[2], 'red']}
+            return newState
+        }
+        this.setState(changeOneRed)
     }
 
 
-   render(){
+    render(){
        
        return(
            <div className = 'container'>
@@ -68,7 +93,9 @@ class App extends Component{
                 <button onClick = {this.handleBigTimeDJ2}>Big Time DJ2 </button>
                 <button onClick = {this.handleBigTimeDJ3}>Big Time DJ3 </button>
                 <button onClick = {this.handleBigTimeDJ4}>Big Time DJ4 </button>
-
+            </div>     
             
        )
-                           
+    }
+}
+export default App 
