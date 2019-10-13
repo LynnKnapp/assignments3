@@ -2,6 +2,7 @@ const express =require('express')
 const app = express()
 const morgan = require('morgan')
 const mongoose =require("mongoose")
+const PORT = process.env.PORT || 6003
 
 
 app.use(express.json())
@@ -15,9 +16,16 @@ mongoose.connect('mongodb://localhost: 27017/bountyhunterdb',
     useUnifiedTopology: true
 }, () => console.log('connected to db'))
 
-app.use('/bounties', require('./routes/bountyRouter'))
+app.use('/bounties', require('./routes/bountyRouter.js'))
+//Global Error Handler
+app.use((err, req, res, next)=> {
+    console.log(err)
+    return res.send({errMsg: err.message})
+})
 
 
-app.listen(6003, () => {
+
+
+app.listen(PORT, () => {
     console.log('server is running on Port 6003')
 })

@@ -6,15 +6,13 @@
   "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^5.7.4",
+    "morgan": "^1.9.1",
+    "react-router-dom": "^5.1.2",
     "uuid": "^3.3.3"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\"coo && exit 1",
     "start": "node server.js"
-  },
-  "proxy": "http://localhost:6003",
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
-}
+  }
+  
