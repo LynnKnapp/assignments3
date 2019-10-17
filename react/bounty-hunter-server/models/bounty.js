@@ -5,6 +5,7 @@ const bountySchema = new Schema({
     firstName: {
         type: String,
         required: true
+
     },
     lastName: {
         type: String,
@@ -12,16 +13,17 @@ const bountySchema = new Schema({
     },
     isLiving: {
         type: String,
-        required: true
+        default: true
     },
     bountyPrice: {
         type: Number,
-        required: true
+        default: 200
 
     },
     type: {
         type: String,
-        required: true
+        required: true,
+        enum:['Sith', 'Jedi']
     }
 
 

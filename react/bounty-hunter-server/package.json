@@ -15,4 +15,5 @@
     "test": "echo \"Error: no test specified\"coo && exit 1",
     "start": "node server.js"
   }
+}  
   

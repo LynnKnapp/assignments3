@@ -1,44 +1,57 @@
 import React from 'react'
+import Bounty from './Bounty.js'
 
 const BountiesForm =(props) =>{
-    const {FirstName, LastName, isLiving, bountyPrice,type, handleChange, handleSubmit, handleDelete} = props
+    
     return(
         <div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={props.handleSubmit}>
                 <input 
                     type='text'
-                    value={FirstName}
+                    value={props.firstName}
+                    onChange={props.handleChange}
                     name='firstName'
-                    onChange={handleChange}
-                    placeholder='First Name'/>
+                    />First Name
+                    <br/>
                 <input
                     type='text'
-                    value={LastName}
+                    value={props.lastName}
                     name='lastName'
-                    onChange={handleChange}
-                    placeholder='Last Name'/>
+                    onChange={props.handleChange}
+                    />Last Name
+                    <br/>
                 <input
                     type='text'
-                    value={isLiving}
+                    value={props.isLiving}
                     name='isLiving'
-                    onChange={handleChange}
-                    placeholder='Is still living'/> 
+                    onChange={props.handleChange}
+                    />Is Living
+                    <br/>
                 <input 
                     type='text'
-                    value={bountyPrice}
+                    value={props.bountyPrice}
                     name='bountyPrice'
-                    onChange={handleChange}
-                    placeholder='Bounty Price'/> 
+                    onChange={props.handleChange}
+                    />Bounty
+                    <br/>  
                 <input
-                    type='text'
-                    value={type}
+                    type='radio'
+                    value='Sith'
                     name='type'
-                    onChange={handleChange}
-                    placeholder='Type'/>
+                    onChange={props.handleChange}/>Sith
+                    <br/>
+                <input
+                    type='radio' 
+                    value='Jedi'
+                    name='type'
+                    onChange={props.handleChange}/>Jedi
+                    <br/>   
                 <button>Submit</button>                 
             </form>
-            <button onClick={handleDelete}></button>
+            <button onClick={props.handleDelete}></button>
+            <Bounty/>
         </div>
+
     )
 }
 export default BountiesForm
