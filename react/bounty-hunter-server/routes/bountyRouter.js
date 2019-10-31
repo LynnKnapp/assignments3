@@ -51,11 +51,11 @@ bountyRouter.post("/",(req, res, next) => {
 bountyRouter.delete('/:_id', (req, res, next)=>{
     //argument 1 : id
     //argument 2: callback function, handles the error and bounty
-    Bounty.findByIdAndRemove(req.params._id, (err, movie)=>{
+    Bounty.findByIdAndRemove(req.params._id, (err, bounty)=>{
         if(err){
             res.status(500)
         }
-        return res.status(200).send(`sucessfully deleted ${bounty.firstName}`)
+        return res.status(200).send('sucessfully deleted')
 
     })
 })
@@ -81,33 +81,3 @@ bountyRouter.put('/:_id', (req,res, next)=>{
 })
 
 module.exports = bountyRouter
-// bountyRouter.route('/')
-//     .get((req, res)=>{
-//         res.send(bounties)
-//     })
-//     .post((req,res,)=>{
-//         const newBounty = req.body
-//         newBounty._id = uuid()
-//         bounties.push(newBounty)
-//         res.send(newBounty)
-//     })
-
-// bountyRouter.route('/:_id')
-//     .get((req, res)=>{
-//         const singleBounty = bounty.find(bounty => bounty._id === req.params._id)
-//         res.send(singleBounty)
-//     })
-//     .delete((req,res)=>{
-//         const bountyID =req.params._id
-//         const bountyToDelete = bounties.findIndex(bounty => bounty._id === bountyID) 
-//          bounties.splice(bountyToDelete, 1)  
-//          res.send('sucessfully deleted') 
-//     })
-//     .put((req, res)=>{
-//         const bountyId =req.params._id
-//         const bountyToUpdate =bounties.find(bounty => bounty._id === bountyId)
-//         const bountyIndexToUpdate =bounties.findIndex(bounty => bounty._id === bountyId)
-//         const updatedBounty =Object.assign(bountyToUpdate, req.body)
-//         bounties.splice(bountyIndexToUpdate, 1, updatedBounty)
-//     })    
-
