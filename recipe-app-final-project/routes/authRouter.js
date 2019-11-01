@@ -23,16 +23,15 @@ authRouter.post('/signup', (req, res, next)=>{
                 return next(err)
             }
             //generate a token
-            const token = jwt.sign(savedUser.toObject(), process.env.SECRET)
+            const token = jwt.sign(savedUser.withoutPassword(), process.env.SECRET)
             // include a response that includes the users info && a token
-            return res.status(201).send({token, user: savedUser})
+            return res.status(201).send({user: savedUser.withoutPassword(), token})
         })
     })
     
 })
 // LOGIN
 authRouter.post("/login", (req, res, next) => {
-    // Does the user already exist?
     User.findOne({username: req.body.username.toLowerCase()}, (err, user) => {
         if(err){
             res.status(500)
@@ -44,14 +43,23 @@ authRouter.post("/login", (req, res, next) => {
             return next(new Error("Username or Password is not correct!"))
         }
         // Does the user's password match the saved password
-        if(user.password !== req.body.password){
+        user.checkPassword(req.body.password, (err, isMatch) => {
             res.status(401)
-            return next(new Error("Username or Password is not correct!"))
-        }
-        // creating the token
-        const token = jwt.sign(user.toObject(), process.env.SECRET)
-        // and sending response with user and token
-        return res.status(200).send({user: user.toObject(), token})
+            //at this point the user exists and the password matches 
+            // token is then created
+            const token = jwt.sign(user.withoutPassword(), process.env.SECRET)
+            // and sending response with user and token
+            if(isMatch){
+                return res.status(200).send({user: user.withoutPassword(), token})
+            } else {
+                return next(new Error("Username or Password is not correct!"))
+            }
+        })
+        //at this point the user exists and the password matches 
+        // token is then created
+        // const token = jwt.sign(user.withoutPassword(), process.env.SECRET)
+        // // and sending response with user and token
+        // return res.status(200).send({user: user.withoutPassword(), token})
     })
 })
 
