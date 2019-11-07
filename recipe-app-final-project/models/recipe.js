@@ -4,11 +4,11 @@ const Schema = mongoose.Schema
 const recipe = new Schema ({
      name: {
          type: String,
-         required: true,
+         
      },
      author: {
          type: String,
-         required: true,
+         
      },
      dietType: {
          type: String,
@@ -17,7 +17,7 @@ const recipe = new Schema ({
      },
      description: {
          type: String,
-         required: true,
+         
      },
      ingredients: [{
          type: String,
