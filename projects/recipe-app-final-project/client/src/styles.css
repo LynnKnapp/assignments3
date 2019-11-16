@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+}
+
+img {
+    object-fit: cover;
+    width: 100vw;
+    border: solid 5px black;
+    border-radius: 12px;
+}
+
+.home-img {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.nav-container {
+    position: fixed;
+    z-index: 30;
+    background-color: rgba(20, 8, 8, 0.5);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    z-index: 35;
+    background-color: white;
+    width: 80vw;
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 22px 0;
+    border: 1px solid saddlebrown;
+    border-radius: 8px;
+    box-shadow: 0px 30px 80px 4px black;
+}
+.nav > a {
+    font-size: 20pt;
+    display: block;
+    min-width: 80vw;
+    text-align: center;
+}
+
+.menu{
+    border:none;
+    border-radius: 1px;
+    font-size: 19pt;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    background-color: #EEB75C;
+    box-shadow: 0px 0px 17px 4px black;
+    z-index: 20;
+}
+
+.auth-form {
+    padding: 80px 20px;
+}
+
+#root > div > div.nav-container > div > button, .myRecipe-container > div > div > div:nth-child(1n) > div > form > :nth-child(1n),
+.auth-form > button, .auth-form > form > input:nth-child(1n), button, select {
+    border: 1px solid saddlebrown;
+    border-radius: 4px;
+    font-size: 19pt;
+    padding: 8px; 
+    margin: 12px auto;
+    display: block;
+    margin-top: 20px;
+}
+
+.myRecipe-container > div > div > form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.myRecipe-container > div > div > form > :nth-child(1n){
+    display: block;
+    width: 90vw;
+    font-size: 19pt;
+    margin: 8px auto;
+    padding: 6px;
+
+}
+
+h1, h2, h3, h4, h5{
+    margin: 6px 16px;
+    text-align: center;
+}
+
+.myRecipe-container > div > div > div:nth-child(1n){
+    margin: 76px 0;
+    border-bottom: 5px solid black;
+}
+
+.ingredients{    
+    display: flex;
+    width: 80vw;
+}
+
+.add-edit{
+    padding-top: 60px;
+}
+
+.myRecipe-container > div > div > form > :nth-child(1n){
+    font-size: 15pt;
+    text-align-last: center;    
+    width: 100%;
+    margin: 10px auto;
+}
+
+.info {
+    position: relative;
+    color: white;
+    background: rgba(109, 53, 11, 0.5);
+    top: -141px;
+    width: 80vw;
+    margin: 0 auto;
+    border-radius: 7px;
+}
+.ingredients {
+    margin: -70px auto auto 30vw;
+    font-size: 14pt;
+}
+.recipe-container{
+    padding-bottom: 40px;
+}
+
+
+@media only screen and (min-width: 400px) {
+    .ingredients{
+        /* width: 50vw; */
+        font-size: 20pt;
+    }
+    .recipe-form{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        font-size: 17pt;
+        text-align: left;
+        margin: auto;
+    }
+    
+    img {
+        max-width: 800px;
+        max-height: 600px;
+        object-fit: cover;
+        margin: 0 auto;
+        display: block;
+    }
+    .recipe-form {
+    display: flex;
+    flex-direction: column;
+    font-size: 14pt;
+    }
+    .recipe-form > select{
+        font-size: 14pt;
+    }
+    
+    .info {
+        max-width: 700px;
+    }
+} 
