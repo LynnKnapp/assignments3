@@ -14,7 +14,8 @@ class QuoteList extends Component{
             currentQuoteIndex: 0,
             showimage: '',
             answerChoice: false,
-            hasAnswered: false
+            hasAnswered: false,
+            
         }
     }
     componentDidMount(){
@@ -46,7 +47,8 @@ class QuoteList extends Component{
             console.log('correct')
             this.setState({
                 answerChoice: true,
-                hasAnswered: true
+                hasAnswered: true,
+                
             })
             
         } else {

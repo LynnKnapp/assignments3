@@ -22,8 +22,8 @@
 .quote-container > h2{
     font-size: 24px;
     text-align: justify;
-    margin-left: 190px;
-    margin-right: 190px;
+    margin-left: 250px;
+    margin-right: 250px;
     font-family: 'Khand', sans-serif;
     padding-bottom: 30px;
 
@@ -95,7 +95,7 @@ body{
 
 .input[type=radio]{
     transform: scale(1.5);
-    margin-right: 25px;
+
     
 }
     
@@ -115,10 +115,9 @@ body{
     display: flex;
     align-items: center;
     background-color: #EC2930;
-    width: 30%;
+    width: 30vw;
+    align-self: center;
     border: solid 2px black;
-    margin-left: 440px;
-    text-align: center;
     
 }
 .choice >h2{
@@ -127,25 +126,24 @@ body{
     
     
 }
-.input[type=radio] {
-    transform: scale(1);
-    margin-right: 25px;
-} 
+
 .buttons{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
     padding-bottom: 6px;
     
 
 }
 .submit{
     height: 28px;
-    width: 120px;
+    width: 130px;
     /* margin: auto; */
     font-size: 15px;
     border: solid 2px black;
     font-weight: bold;
+    border-radius: 5px;
 }
 
 .next-question{
@@ -155,6 +153,7 @@ body{
     font-size: 15px;
     border: solid 2px black;
     font-weight: bold;
+    border-radius: 5px;
 }
 
 section{
@@ -171,9 +170,9 @@ section{
 }
 
 .videos > iframe {
-    border: solid 5px black;
-    width: 700px;
-    height: 300px;
+    border: solid 15px black;
+    width: 65vw;
+    height: 50vh;
     border-radius: 1%;
 
 }
@@ -217,11 +216,11 @@ width: 100%
     padding-top: 50px;
 }
 .character-facts >p{
-    font-size: 25px;
+    font-size: 22px;
     text-align: justify;
     font-family: 'Khand', sans-serif;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 90px;
+    margin-right: 90px;
     padding-bottom: 50px;
 
 }
@@ -233,9 +232,12 @@ width: 100%
 .author >h2{
     padding-top: 0;
 }
-@media only screen and (min-width: 375px) and (max-width: 968){
+.input[type=radio] {
+    transform: scale(1);
+} 
+@media screen and (min-width: 375px) and (max-width: 968px){
     .navbar{
-        font-size: 18px;
+        font-size: 19px;
     }
     .logo-img{
         height: 150px;
@@ -272,8 +274,8 @@ width: 100%
         margin: 19px;
     }
     .subtitle > h1{
-        margin-top: 56px;
-        font-size: 36px;
+        margin-top: 48px;
+        font-size: 38px;
     }
     .quote-container{
         margin-left: 28px;
@@ -281,27 +283,26 @@ width: 100%
     }
     .quote-container >h1{
         font-size: 23px;
-        padding-top: 60px;
+        padding-top: 6px;
     }
     .quote-container >h2{
-        padding-top: 20px;
         padding-bottom: 20px;
         font-size: 18px;
         text-align: justify;
+        margin-left: 32px;
+        margin-right: 32px;
     
     }
     .choice{
-        display: flex;
-        align-items: center;
-        width: 55%;
-        margin-left: 70px;    
+        width: 45vw;
+        
+            
     }
     .choice > h2{
         font-size: 18px;
     }
     .input[type=radio] {
         transform: scale(1);
-        margin-right: 25px;
     } 
     .submit {
         height: 20px;
@@ -314,7 +315,7 @@ width: 100%
         font-size: 12px;
     } 
     .buttons {
-        padding-left: 118px;
+        padding-left: 5px;
         padding-top: 0px;
         padding-bottom: 25px;
     } 
@@ -335,4 +336,5 @@ width: 100%
     }    
 
     
-}    
+} 
+

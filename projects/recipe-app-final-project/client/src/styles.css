@@ -149,6 +149,7 @@ h1, h2, h3, h4, h5{
         max-width: 800px;
         max-height: 600px;
         object-fit: cover;
+        padding-top: 38px;
         margin: 0 auto;
         display: block;
     }
