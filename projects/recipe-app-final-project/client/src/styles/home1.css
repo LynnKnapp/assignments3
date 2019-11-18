@@ -119,56 +119,5 @@ a > img{
         height: 50px;
     }
       
-}
+}    
 
-/* .form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    
-
-}
-input{
-    border: solid black 4px;
-    width: 200px;
-    height: 30px;
-    border-radius: 5%;
-}
-
-.toggler-btn{
-    justify-content: center;
-    border: solid black 4px;
-    width: 140px;
-    align-self: center;
-}
-.btn{
-    border: solid black 4px;
-    border-radius: 5%; 
-}
-.auth-form{
-    display: flex;
-    flex-direction: column;
-    border: solid black 8px;
-    width: 600px;
-    height: 300px;
-    justify-content: center;
-}
-
-.recipeform-container{
-    display: flex;
-    /* justify-items: center; */
-    /* align-items: center; */
-    /* justify-content: center;
-    margin: auto;
-}
-.recipe-form{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-}
-.myRecipe-container{
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-}  */

@@ -77,9 +77,10 @@ class UserRecipe extends Component{
                     <div className='info'>
                         <h1>{this.props.name}</h1>
                         <h3>{this.props.description}</h3>
-                        <h4>{this.props.author}</h4>
                     </div>
-                    <div className='ingredients'>
+                    <div className='ingredient-container'>
+                        <h4>Author: {this.props.author}</h4>
+                        <h4>Ingredients</h4>
                         <ul>{mappedIngredients}</ul>
                     </div>
                     <div className='buttons'>
