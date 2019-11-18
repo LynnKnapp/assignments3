@@ -33,10 +33,11 @@ class UserRecipe extends Component{
             showRecipes: !prevState.showRecipes
         }))
     }
+    
 
     handleChange = (e) =>{
            
-        console.log('myRecpice handle change')
+       
         const {name, value} = e.target
         this.setState({
             [name]: value
@@ -74,12 +75,12 @@ class UserRecipe extends Component{
                 {!this.state.showRecipes ?
                 <>    
                     <img src={this.props.imgUrl} alt='recipe'/>
+                        <h4>Author: {this.props.author}</h4>
                     <div className='info'>
                         <h1>{this.props.name}</h1>
                         <h3>{this.props.description}</h3>
                     </div>
                     <div className='ingredient-container'>
-                        <h4>Author: {this.props.author}</h4>
                         <h4>Ingredients</h4>
                         <ul>{mappedIngredients}</ul>
                     </div>
@@ -87,7 +88,6 @@ class UserRecipe extends Component{
                         <button onClick={this.editToggler} 
                            >
                             Edit Recipe</button>
-                    
                         <button onClick={ ()=> this.props.handleDelete(this.props._id)}>Delete Recipe</button>
         
                     </div> 

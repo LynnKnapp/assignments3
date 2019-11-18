@@ -59,7 +59,7 @@ class MyRecipes extends Component{
 
         handleChange = (e) =>{
            
-            console.log('myRecpice handle change')
+            
             const {name, value} = e.target
             this.setState({
                 [name]: value
@@ -116,13 +116,14 @@ class MyRecipes extends Component{
                 <>    
                     <div className = 'myRecipes'> 
                             <h1>My Recipes</h1> 
-                            <button onClick={this.toggleForm}>Add A New Recipe</button>
                             <UserRecipeList 
                                 recipes={this.state.recipes}
                                 handleDelete={this.handleDelete}
                                 handleEdit={this.handleEdit}
+                                
 
                             /> 
+                           
                     </div>
                 </>
                 :

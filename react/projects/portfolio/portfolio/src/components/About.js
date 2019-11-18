@@ -14,7 +14,7 @@ const About =(props)=>{
                     </h3>
                 </div>
                 <div className='par-2'>
-                    <h3>As a full stack developer, I am consistently learning new languages and skills through online courses, training, books and meet ups.
+                    <h3>As a developer, I am consistently learning new languages and skills through online courses, training, books and meet ups.
                     </h3>
                 </div>
                   
