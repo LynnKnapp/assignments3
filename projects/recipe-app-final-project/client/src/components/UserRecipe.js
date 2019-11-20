@@ -88,6 +88,7 @@ class UserRecipe extends Component{
                         <button onClick={this.editToggler} 
                            >
                             Edit Recipe</button>
+                        <button onClick={this.toggleForm}>Add Recipe</button>
                         <button onClick={ ()=> this.props.handleDelete(this.props._id)}>Delete Recipe</button>
         
                     </div> 
@@ -120,7 +121,7 @@ class UserRecipe extends Component{
                             type='text'
                             value={this.state.ingredients}
                             onChange={this.handleChange}
-                            name='ingredients'/> 
+                            name='ingredients'/>Diet Type 
                         <select name='dietType' value={this.state.dietType} onChange={this.handleChange}>
                             <option placeholder= 'Diet Type'>Diet Type</option>    
                             <option value="Healthy">Healthy</option>

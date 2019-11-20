@@ -30,6 +30,7 @@ class QuoteList extends Component{
     newQuestion =()=>{
         this.setState(prevState => {
             console.log(this.state.answerChoice)
+    
          return {
             currentQuoteIndex: prevState.currentQuoteIndex + 1, 
             answerChoice: false,
@@ -38,6 +39,7 @@ class QuoteList extends Component{
 
         })
     }
+    
 
     handleSubmit =(event,props)=>{ 
         event.preventDefault()
@@ -48,6 +50,8 @@ class QuoteList extends Component{
             this.setState({
                 answerChoice: true,
                 hasAnswered: true,
+                
+                
                 
             })
             
@@ -60,7 +64,9 @@ class QuoteList extends Component{
                 hasAnswered: true
             })
         }
+        
     }
+    
     
     getQuotes = () => { axios.get('https://seinfeld-quotes.herokuapp.com/quotes')
             .then(response =>{
@@ -81,8 +87,8 @@ class QuoteList extends Component{
         const quotesArr = this.state.quotes
         const mappedQuotes = quotesArr.map(quote => 
             <Quiz author={this.state.quotes[this.state.currentQuoteIndex].author} 
-                newQuestion ={this.newQuestion} 
                 hasAnswered={this.state.hasAnswered} 
+                newQuestion ={this.newQuestion} 
                 userSelection={this.state.userSelection} 
                 answer={quote.author} 
                 answerChoice={this.state.answerChoice} 
