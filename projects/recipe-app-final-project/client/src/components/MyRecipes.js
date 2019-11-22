@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import UserRecipeList from './UserRecipeList.js'
 import UserRecipeForm from './UserRecipeForm.js'
+import ImageUpload from './ImageUpload.js'
 import axios from 'axios'
 
 
@@ -132,6 +133,8 @@ class MyRecipes extends Component{
                         <h2>Add a Favorite Recipe</h2>
                         <h3>Or Edit an Existing One</h3>
                         <button onClick={this.toggleForm}>Back to My Recipes</button>
+                        <ImageUpload
+                            />
                         <UserRecipeForm
                                 name ={this.state.name}
                                 author={this.state.author}

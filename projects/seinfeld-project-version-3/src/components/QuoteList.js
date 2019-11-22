@@ -31,12 +31,12 @@ class QuoteList extends Component{
         this.setState(prevState => {
             console.log(this.state.answerChoice)
     
-         return {
-            currentQuoteIndex: prevState.currentQuoteIndex + 1, 
-            answerChoice: false,
-            hasAnswered: false
-         }
-
+            return {
+                currentQuoteIndex: prevState.currentQuoteIndex + 1, 
+                answerChoice: false,
+                hasAnswered: false,
+                userSelection: ''
+            }
         })
     }
     
@@ -49,10 +49,7 @@ class QuoteList extends Component{
             console.log('correct')
             this.setState({
                 answerChoice: true,
-                hasAnswered: true,
-                
-                
-                
+                hasAnswered: true
             })
             
         } else {

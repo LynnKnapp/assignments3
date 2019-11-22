@@ -4,29 +4,26 @@
 .characters-container {
     text-align: center;
     align-content: center;
-
 }
 .quote-container{
     display: flex;
     flex-direction: column;
     font-size: 20px;
     text-align: center;
-
 }
 .quote-container > h1{
     font-size: 35px;
     font-family: 'Khand', sans-serif;
     font-weight: light;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 .quote-container > h2{
     font-size: 24px;
     text-align: justify;
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 270px;
+    margin-right: 270px;
     font-family: 'Khand', sans-serif;
     padding-bottom: 30px;
-
 }
 .title{
     font-size: 75px;
@@ -46,10 +43,9 @@
     padding-left: 100px;
     width: 80vw;
     height: 260px;
-}
-   
+}   
 .subtitle >h1{
-    margin-top: 100px;
+    margin-top: 30px;
     font-size: 60px;
     font-family: 'Lobster', cursive;
     text-align: center; 
@@ -59,9 +55,8 @@
     animation-name: header;
     animation-duration: 3s;
     animation-timing-function: ease-out; 
-    /* animation-delay: .5s; */
     animation-direction: reverse;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 @keyframes header {
@@ -83,71 +78,54 @@
     color: black;
     text-decoration: none;
 }
-
 .logo-image{
     width: 100%;
     height: 00px;
 }
-
 body{
     background-color: #f8d408;
 }
-
-/* .input[type=radio]{
-    transform: scale(1.5);
-
-    
-} */
-    
-.form >h2{
-    display: inline;
-
-}
-
-
-.choice{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    background-color: #EC2930;
-    width: 30vw;
-    height: 40px;
-    align-self: center;
-    border: solid 2px black;
-    margin-left: 430px;
-    
-}
-.choice >h2{
-    font-size: 24px;
-    padding-left: 15px;
-    margin-bottom: 10px;
-    
-    
-}
-
-.buttons{
+.form-container{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
-    padding-bottom: 6px;
-    
-
+}
+.choice >input[type=radio] {
+        transform: scale(1);
+        margin-right: 12px;
+}    
+.choice{
+    border: solid;
+    text-align: left;
+    height: 30px;
+    background-color: #EB2832;
+    font-size: 24px;
+    width: 350px;
+    font-weight: bold;
+    margin-bottom: 1px;   
+}
+.buttons{
+    display: flex;
+    justify-content: center;
 }
 .submit{
     height: 28px;
     width: 130px;
-    /* margin: auto; */
+    padding-top: 5px;
+    margin-top: 5px;
     font-size: 15px;
     border: solid 2px black;
     font-weight: bold;
     border-radius: 5px;
-}
-
+} 
 .next-question{
+    display: flex;
     height: 28px;
     width: 130px;
-    /* margin:auto; */
+    /* margin-left: 575px; */
+    margin-top: 5px;
+    margin-bottom: 10px;
     font-size: 15px;
     border: solid 2px black;
     font-weight: bold;
@@ -155,18 +133,16 @@ body{
 }
 
 .image{
-    height: 650px;
-    width: 650px;
-    border-radius: 8%;
+    height: 550px;
+    width: 550px;
+    border-radius: 6%;
     border: solid 10px black;
 }
-
 .videos > iframe {
     border: solid 15px black;
     width: 65vw;
     height: 50vh;
     border-radius: 1%;
-
 }
 
 .videos{
@@ -176,16 +152,14 @@ justify-content: center;
 align-items: center;
 width: 100%
 }
-
 .video-main >h1{
-    padding-top: 80px;
+    margin-top: 20px;
     padding-bottom: 100px;
-    font-size: 60px;
+    font-size: 54px;
     font-family: 'Bevan', cursive;
     font-weight: bold;
     text-align: center
 }
-
 .character-facts{
     display: "flex";
     flex-direction: column;
@@ -193,11 +167,10 @@ width: 100%
     margin-left: 130px;
     margin-right: 130px;   
 }
-
 .character-heading{
     font-size: 30px;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 0px;
     font-family: 'Lobster', cursive;
 }
 .character-facts >img{
@@ -214,7 +187,6 @@ width: 100%
     margin-left: 90px;
     margin-right: 90px;
     padding-bottom: 50px;
-
 }
 .wrong-answer > h1{
     font-size: 28px;
@@ -224,17 +196,16 @@ width: 100%
 .author >h2{
     padding-top: 0;
 }
- 
 @media screen and (min-width: 375px) and (max-width: 968px){
     .navbar{
         font-size: 19px;
     }
     .logo-img{
-        height: 150px;
+        height: 90px;
     }
     .logo-img > img{
         padding-left: 40px;
-        height: 150px;
+        height: 90px;
     }
     .character-heading {
         margin-top: 20px;   
@@ -264,20 +235,21 @@ width: 100%
         margin: 19px;
     }
     .subtitle > h1{
-        margin-top: 48px;
-        font-size: 38px;
+        margin-top: 10px;
+        font-size: 24px;
+        padding-bottom: 10px;
     }
     .quote-container{
         margin-left: 28px;
         margin-right: 28px;
     }
     .quote-container >h1{
-        font-size: 23px;
+        font-size: 17px;
         padding-top: 6px;
     }
     .quote-container >h2{
         padding-bottom: 20px;
-        font-size: 18px;
+        font-size: 13px;
         text-align: justify;
         margin-left: 32px;
         margin-right: 32px;
@@ -285,63 +257,53 @@ width: 100%
     }
     .choice{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 200px;
-        margin-left: 0px;  
+        justify-content: left;
+        width: 170px;
+        height: 22px;
+        margin-left: 0px;
+        font-size: 15px ;            
+    } 
+    .choice >input[type=radio] {
         
-            
-    }
-    .choice > h2{
-        font-size: 18px;
-    }
-    .input[type=radio] {
-        transform: scale(1);
+        margin-right: 4px;
     } 
     .submit {
-        height: 20px;
-        width: 110px;
-        font-size: 12px;
-    }  
-    .next-question {
-        height: 20px;
-        width: 110px;
-        font-size: 12px;
-    } 
-    .buttons {
-        padding-left: 5px;
-        padding-top: 0px;
-        padding-bottom: 25px;
-    } 
-    .wrong-answer > h1{
-        font-size: 22px;
-    }  
-    .image{
-        height: 270px;
-        width: 270px;
+        height: 24px;
+        width: 100px;
+        font-size: 11px;
+        margin-top: 1px;   
     }
+    .next-question {
+        display: flex;
+        height: 24px;
+        width: 100px;
+        margin-top: 4px;
+        margin-bottom: 10px;
+        font-size: 11px;
+        border: solid 2px black;
+        font-weight: bold;
+        border-radius: 5px;   
+    }
+    .author > h2{
+        font-size: 23px;
+    }
+    .image{
+        height: 280px;
+        width: 280px;
+    } 
     .videos{
-        width: 100%;
-        
-        }
+        width: 100%;    
+    }
     .video-main >h1 {
-    padding-top: 23px;
+    margin-top: 0px;
     padding-bottom: 30px;
-    font-size: 36px;
+    font-size: 32px;
     } 
     .videos>iframe {
         border: 10px solid #000;
         width: 65vw;
         height: 18vh;
         border-radius: 1%;
-    }
-    .form{
-        display: flex;
-        flex-direction: column;
-        /* margin-left: 20px; */
-        
     }   
-
-    
 } 
 

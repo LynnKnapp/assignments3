@@ -2,33 +2,34 @@ import React from 'react'
 import './styles.css'
 
 const Form =(props)=>{
+   
     return(
-        <section>
+        <div className= 'form-container'>
             <form className= 'form' onSubmit ={props.handleSubmit}>
                     <div className='choice'>
-                        <input className = 'input'type='radio' name='userSelection' value='Jerry' onChange={props.handleChange}/><h2>Jerry Seinfeld</h2>
+                        <input type='radio' name='userSelection' value='Jerry' checked={props.userSelection === 'Jerry'} onChange={props.handleChange}/>Jerry Seinfeld
                     </div>
                     <div className='choice'>
-                        <input type='radio' name='userSelection' value='Elaine'onChange={props.handleChange}/><h2>Elaine Benes</h2>
+                        <input type='radio' name='userSelection' value='Elaine' checked={props.userSelection === 'Elaine'} onChange={props.handleChange}/>Elaine Benes
                     </div>
                     <div className='choice'>
-                        <input type='radio' name='userSelection' value='George'onChange={props.handleChange}/><h2>George Costanza</h2>
+                        <input type='radio' name='userSelection' value='George' checked={props.userSelection === 'George'} onChange={props.handleChange}/>George Costanza
                     </div>
                     <div className='choice'>
-                        <input type='radio' name='userSelection' value='Kramer' onChange={props.handleChange}/><h2>Cosmo Kramer</h2> 
+                        <input type='radio' name='userSelection' value='Kramer' checked={props.userSelection === 'Kramer'} onChange={props.handleChange}/>Cosmo Kramer 
                     </div>
                     <div className='choice'>
-                        <input type='radio' name='userSelection' value='Newman'onChange={props.handleChange}/><h2>Newman</h2>
+                        <input type='radio' name='userSelection' value='Newman' checked={props.userSelection === 'Newman'} onChange={props.handleChange}/>Newman
                     </div>
                     <div className='choice' >
-                        <input type='radio' name='userSelection' value='Frank Costanza' onChange={props.handleChange} /><h2>Frank Costanza</h2>
+                        <input type='radio' name='userSelection' value='Frank Costanza' checked={props.userSelection === 'Frank Costanza'} onChange={props.handleChange} />Frank Costanza
                     </div>
                 <div className='buttons'>    
                     <button className = 'submit'>Submit</button>
-                    <button className='next-question'onClick={props.newQuestion}>Next Question</button>
                 </div>
                 </form>
-        </section>  
+                <button className='next-question' onClick={props.newQuestion}>Next Question</button>    
+        </div>  
     )
 }
 export default Form

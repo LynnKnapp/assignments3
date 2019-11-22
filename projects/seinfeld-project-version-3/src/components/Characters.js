@@ -18,6 +18,7 @@ import {withChar} from './ContextCharacters'
                 // (props.userSelection === props.author) 
                 ? 
                 <div className= 'author'> 
+                    <h2>You're correct!!  It's</h2>
                     <h2>{props.author}</h2>
                     <img className = 'image'src=
                         {getImage()}
@@ -25,7 +26,7 @@ import {withChar} from './ContextCharacters'
                 </div>
             :
             <div className= 'wrong-answer'>
-                <h1>Your wrong, try again.</h1>     
+                <h1>Sorry you're wrong</h1>     
             </div>
             }
         </div>
