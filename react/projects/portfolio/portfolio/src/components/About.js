@@ -10,12 +10,12 @@ const About =(props)=>{
                     </h2>
                 </div>
                 <div className='par-1'>
-                    <h3>I am a full-stack developer based in Salt Lake City, UT. I love creating unique designs with an edge and enjoy building apps that are practical, enjoyable and user friendly.
-                    </h3>
+                    <h2>I am a full-stack developer based in Salt Lake City, UT. I love creating unique designs with an edge and enjoy building apps that are practical, enjoyable and user friendly.
+                    </h2>
                 </div>
                 <div className='par-2'>
-                    <h3>As a developer, I am consistently learning new languages and skills through online courses, training, books and meet ups.
-                    </h3>
+                    <h2>As a developer, I am consistently learning new languages and skills through online courses, training, books and meet ups.
+                    </h2>
                 </div>
                   
             </div>
