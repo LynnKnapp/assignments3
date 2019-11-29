@@ -67,7 +67,7 @@ class QuoteList extends Component{
     
     getQuotes = () => { axios.get('https://seinfeld-quotes.herokuapp.com/quotes')
             .then(response =>{
-                const favorites = [421,389,396,398,303,129,142,247,395]
+                const favorites = [421,389,396,398,303,129,142,247,395,410,414,417,402,309,319,325,332,334,338,343,347,371,379,205,213,237,]
                 const bestQuotes = response.data.quotes.filter((item, i)=>{
                     return favorites.includes(i)
                 })
