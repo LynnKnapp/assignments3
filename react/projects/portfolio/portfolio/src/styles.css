@@ -155,25 +155,28 @@ body{
     font-size: 50px;
     font-family: 'Nunito', sans-serif;
     text-align: center;
+    color:  rgb(4, 39, 49);
     
 }
+
 .img-container{
     margin-top: 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-img{
-    border: solid  rgb(4, 39, 49) 6px;
+ .seinfeld{
+    border: solid  rgb(4, 39, 49) 2px;
     height: 220px;
     width: 220px;
     border-radius: 8%;
-    margin-bottom: 30px;   
+    margin-bottom: 30px; 
+    text-align: center;  
 }
 .image > a{
     font-size: 30px;
     color:  #004250;
-}
+} 
 .resume{
     background-color:  #004250;
     display: flex;
@@ -190,7 +193,7 @@ img{
     color: rgb(211, 227, 211);
 }
 .image{
-    background-image: url('https://cdn61.picsart.com/187990019000201.jpg?r1024x1024');
+    background-color:  rgb(211, 227, 211);
     display: flex;
     justify-content: center;
     height: 180px;

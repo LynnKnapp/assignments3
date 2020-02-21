@@ -8,8 +8,12 @@ const Projects =(props)=>{
         <div className= 'projects-container'ref={props.projectsRef}>
             <h1>Projects</h1>
             <div className='img-container'>
-                <a href='http://serenitynow.surge.sh/'>Seinfeld API Quiz</a>
+                <div className='seinfeld'>
+                    <a href='http://serenitynow.surge.sh/'>Seinfeld API Quiz</a>
+                </div>
+                <div className='pawesome'>
                 <a href='https://pawesome-pets1.herokuapp.com/'>Pet Adoption Fullstack App</a>
+                </div>
                 {/* <a href='https://recipe-app14.herokuapp.com/'>Recipe App</a> */}
             </div>    
         </div>

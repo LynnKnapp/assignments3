@@ -1,8 +1,10 @@
 import React from 'react'
 import './styles.css'
 
-const Form =(props)=>{
-   
+
+const Form =(props)=>{ 
+
+    
     return(
         <div className= 'form-container'>
             <form className= 'form' onSubmit ={props.handleSubmit}>
@@ -24,12 +26,13 @@ const Form =(props)=>{
                     <div className='choice' >
                         <input type='radio' name='userSelection' value='Frank Costanza' checked={props.userSelection === 'Frank Costanza'} onChange={props.handleChange} />Frank Costanza
                     </div>
-                <div className='buttons'>    
-                    <button className = 'submit'>Submit</button>
-                </div>
+                      
+                    <div className='buttons' >  
+                        <button className = 'submit'>Submit</button>    
+                    </div>
                 </form>
-                <button className='next-question' onClick={props.newQuestion}>Next Question</button>    
+                    <button className='next-question' onClick={props.newQuestion}>Next Question</button>    
         </div>  
-    )
-}
+    )}
+
 export default Form
