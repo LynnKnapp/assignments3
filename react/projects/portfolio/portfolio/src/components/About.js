@@ -11,7 +11,7 @@ const About =(props)=>{
                         </h3>
                     </div>
                     <div className='par-1'>
-                        <h3>I am a full-stack developer based in Salt Lake City, UT. I love creating unique designs with an edge and enjoy building apps that are practical, enjoyable and user friendly.
+                        <h3>I am a full-stack developer with a passion for programming. I love creating unique designs with an edge and enjoy building apps that are practical, enjoyable and user friendly.
                         </h3>
                     </div>
                 
