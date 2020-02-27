@@ -4,6 +4,9 @@ import './styles.css'
 
 const Form =(props)=>{ 
 
+    function scrollWin(x, y) {
+        window.scrollBy(0,850);
+      }
     
     return(
         <div className= 'form-container'>
@@ -28,7 +31,7 @@ const Form =(props)=>{
                     </div>
                       
                     <div className='buttons' >  
-                        <button className = 'submit'>Submit</button>    
+                        <button className = 'submit' onclick={scrollWin(0,850)}>Submit</button>    
                     </div>
                 </form>
                     <button className='next-question' onClick={props.newQuestion}>Next Question</button>    
