@@ -22,7 +22,7 @@ const Projects =(props)=>{
                         <p>Node</p>
                         <p>CSS Responsive Design</p>
                         <br/>
-                        <a href='http://seinfeldquiz1.surge.sh/'>Link</a>
+                        <a href='/'>Link</a>
                 </div>
                 <div className='budget'>
                         <h3>Monthly Budget App</h3>
