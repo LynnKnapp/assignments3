@@ -51,7 +51,7 @@ const Projects =(props)=>{
                         <p>Mongoose</p>
                         <p>Express</p>
                         <p>Node</p>
-                        <p>MongodDB</p>
+                        <p>MongodDB and MLab</p>
                         <p>CSS Responsive Design</p>
                         <a href='https://pawesome-pets1.herokuapp.com/'>Link</a>
     
