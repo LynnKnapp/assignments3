@@ -80,7 +80,7 @@
     color: whitesmoke
 }
 .navbar > a:nth-child(2){
-    color: whitesmoke
+    color: whitesmokez
 }
 .navbar > a:nth-child(3){
     color: whitesmoke
@@ -212,9 +212,7 @@ width: 100%
 .character-facts >h1{
     font-weight: bold;
 }
-.character-facts >h2{
-    padding-top: 50px;
-}
+
 .character-facts >p{
     font-size: 22px;
     text-align: justify;
@@ -251,6 +249,9 @@ width: 100%
     }
     .character-facts > h2{
         font-size: 35px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-top: 0   
     }
     .character-facts >img {
         border: 5px solid black;
@@ -259,10 +260,6 @@ width: 100%
     }
     .characters-container{
         padding-bottom: 30px;
-    }
-    .character-facts{
-        margin-left: 0px;
-        margin-right: 0px;    
     }
     .character-facts >p{
         font-size: 22px;
@@ -351,6 +348,7 @@ width: 100%
     }
     .logo-img{
         height: 90px;
+        width: 100vw;
     }
     .logo-img > img{
         /* padding-left: 40px; */
