@@ -1,8 +1,6 @@
 import React from 'react'
 import QuoteList from './components/QuoteList.js'
 import Navbar from './components/Navbar.js'
-import Home from './components/Home.js'
-import Quiz from './components/Quiz.js'
 import CharacterFacts from './components/CharacterFacts.js'
 import {Switch, Route, withRouter} from 'react-router-dom'
 import FavoriteClips from './components/FavoriteClips.js'
