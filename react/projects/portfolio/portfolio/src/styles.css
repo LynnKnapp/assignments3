@@ -19,14 +19,14 @@ body{
     background-position: center;
 }
 .header >h1{
-  font-size: 85px; 
+  font-size: 65px; 
   font-family: 'Nunito', sans-serif;
   text-align: left;
   color: rgb(211, 227, 211);
   text-shadow: 5px 6px 8px  rgb(1, 12, 15);
   margin-top: 18px;
   margin-left: 130px;
-  padding-top: 90px;
+  padding-top: 110px;
 }
 
 .header >h2{
@@ -68,7 +68,7 @@ body{
 }
 
 .about-container >h1{
-    font-size: 45px;
+    font-size: 35px;
     font-family: 'Nunito', sans-serif;
     font-weight: bolder;
     color:  rgb(4, 39, 49);
@@ -76,9 +76,9 @@ body{
 }
 .intro{
     display: grid;
-    grid-gap: 50px;
+    /* grid-gap: 10px; */
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 .par-intro{
     grid-column: 1/2;
@@ -88,51 +88,50 @@ body{
     font-family: 'Nunito', sans-serif;
     margin-left: 50px;
     margin-right: 50px;
-    margin-top: 50px;
+    margin-top: 10px;
 
 }
 .par-intro >h3{
-    font-size: 42px;
+    font-size: 27px;
     font-style: italic;
     margin-left: 30px;
 }
 
 .par-1{
     grid-column: 2/3;
-    grid-row: 2/5;
+    grid-row: 1/3;
     font-size: 25px;
     text-align: left;
-    margin-left: 170px;
-    margin-right: 170px;
-    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 70px;
     color: rgb(4, 39, 49);
     font-family: 'Nunito', sans-serif;
 }
 .par-1 >h3{
-    font-size: 30px;
+    font-size: 22px;
 }
 .par-2{
-    grid-column: 1/3;
-    grid-row: 5/6;
-    /* width: 100vw; */
+    grid-column: 1/2;
+    grid-row: 3/4;
     margin-left: 80px;
-    margin-right: 80px; 
-    margin-top: 0;
+    margin-right: 80px;
+    margin-bottom: 20px;
     padding-top: 0;
-    font-size: 25px;
+    font-size: 16px;
     font-family: 'Nunito', sans-serif;
     text-align: justify;
     color: rgb(4, 39, 49);    
 }
 .par-2 >h3{
-    font-size: 34px;
+    font-size: 22px;
 }
 .skills-container{
     background-color: #004250;
     padding-bottom: 5px;
 }
 .skills-container > h1{
-    font-size: 50px;
+    font-size: 35px;
     font-family: 'Nunito', sans-serif;
     color: rgb(211, 227, 211);
     text-align: center;
@@ -141,9 +140,9 @@ body{
 .list{
  display: grid;
  grid-template-columns: 1fr 1fr 1fr;
- margin-left: 210px;
- margin-top: 70px;
- margin-bottom: 100px;   
+ margin-left: 155px;
+ margin-top: 20px;
+ margin-bottom: -25px;   
  
 }
 .list > h1{
@@ -152,21 +151,24 @@ body{
     color: rgb(211, 227, 211);
 }
 .list > li{
-    font-size: 35px;
+    font-size: 26px;
     font-family: 'Nunito', sans-serif;
     padding-bottom: 30px;
     color: rgb(211, 227, 211);
 }
 .projects-container{
-    height: 450px;
+    height: 500px;
 }
 .projects-container >h1{
     margin-top: 0px;
     margin-bottom: 18px;
-    font-size: 50px;
+    font-size: 35px;
     font-family: 'Nunito', sans-serif;
     text-align: center;
     color:  rgb(4, 39, 49);   
+}
+.ind-project-cont{
+    margin-bottom: 5px;
 }
 
 .img-container{
@@ -176,36 +178,60 @@ body{
     justify-content: space-around;
     
 }
+.ind-project-cont > ul > li{
+    text-align: left;
+    margin-left: 94px;
+}
  .seinfeld{
     border: solid  rgb(4, 39, 49) 4px;
-    height: 324px;
-    width: 240px;
+    height: 420px;
+    width: 260px;
     border-radius: 8%;
     margin-bottom: 30px; 
+    margin-left: 2px;
     text-align: center;  
     color: rgb(4, 39, 49);
     box-shadow: black 3px 5px 5px;
+}
+.seinfeld >h5{
+    text-align: justify;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 3px;
 }
 .budget{
     border: solid  rgb(4, 39, 49) 4px;
-    height: 324px;
-    width: 240px;
+    height: 420px;
+    width: 260px;
     border-radius: 8%;
     margin-bottom: 30px; 
     text-align: center;  
     color: rgb(4, 39, 49);
     box-shadow: black 3px 5px 5px;
+}
+.budget >h5{
+    text-align: justify;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 3px;
 }
 .pets{
     border: solid  rgb(4, 39, 49) 4px;
-    height: 324px;
-    width: 240px;
+    height: 420x;
+    width: 260px;
     border-radius: 8%;
     margin-bottom: 30px; 
     text-align: center;  
     color: rgb(4, 39, 49);
     box-shadow: black 3px 5px 5px;
 }
+.pets >h5{
+    text-align: justify;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 3px;
+}
+
 .seinfeld p{
     color: rgb(4, 39, 49);
     
@@ -251,12 +277,26 @@ body{
 .pets> p{
     color: rgb(4, 39, 49)
 }
+.pets > a{
+    margin-top: 3px;
+}
 
 .image > a{
-    font-size: 30px;
-    color:  #004250;
+    font-size: 26px;
+    color: #004250;
     text-decoration: none;
+    border: solid 10px rgb(4, 39, 49);
+    height: 65px;
+    line-height: 40px;
+    font-size: 22px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 15px;
+    color: rgb(211, 227, 211);
+    width: 225px;
 } 
+
 .seinfeld >p{
     text-decoration: none;
 }
@@ -265,10 +305,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 300px;
+    height: 161px;
 }
 .resume > h1{
-    font-size: 50px;
+    font-size: 35px;
     font-family: 'Nunito', sans-serif;
     text-align: center;
     font-weight: bolder;
@@ -276,19 +316,19 @@ body{
     color: rgb(211, 227, 211);
 }
 .image{
-    background-color: rgb(239, 245, 239);
+    /* background-color: rgb(239, 245, 239); */
     display: flex;
     justify-content: center;
-    height: 180px;
-    width: 350px;  
+    height: 110px;
+    width: 280px;  
     border-radius: 5%;
-    border: solid 15px  rgb(4, 39, 49);
+    /* border: solid 15px  rgb(4, 39, 49); */
 }
-.download{
-    padding-top: 60px;
+.footer >h1{
+    font-size: 35px;
 }
 .footer{
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Nunito', sans-serif;
     text-align: center;
     margin-bottom: 50px;

@@ -1,5 +1,5 @@
 import React from 'react'
-import pdf from '../pdf/Resume.pdf'
+import pdf from '../pdf/Resume1.pdf'
 
 const Resume =(props)=>{
     return(
