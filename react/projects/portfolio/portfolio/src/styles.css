@@ -140,7 +140,7 @@ body{
 .list{
  display: grid;
  grid-template-columns: 1fr 1fr 1fr;
- margin-left: 155px;
+ margin-left: 250px;
  margin-top: 20px;
  margin-bottom: -25px;   
  
